@@ -1,5 +1,5 @@
 #!/bin/bash
-# Cleans the packages in the repository
+# Builds the packages in the repository
 
 # Change the current working directory ($PWD) to the root of the
 # repository to ensure this script always behaves consistently
@@ -12,10 +12,10 @@ source ./scripts/common.sh
 step_cur=0
 step_max=2
 
-step "Cleaning Framework..."
-  npm run clean --prefix ./Framework | trim
+step "Building Framework..."
+  npm run build --prefix ./Framework | trim
 pets
 
-step "Cleaning Samples..."
-  npm run clean --prefix ./Samples/Samples/TypeScript/Demo | trim
+step "Building Samples..."
+  npm run build --prefix ./Samples/Samples/TypeScript/Demo | trim
 pets
