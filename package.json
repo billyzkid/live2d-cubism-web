@@ -1,3 +1,21 @@
 {
-  "private": true
+  "private": true,
+  "workspaces": [
+    "Core",
+    "Framework",
+    "Samples/Samples/TypeScript/Demo"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "start": "cd Samples/Samples/TypeScript/Demo && npm run start",
+    "build": "npm-run-all clean --parallel build:*",
+    "build:framework": "cd Framework && npm run build",
+    "build:samples": "cd Samples/Samples/TypeScript/Demo && npm run build",
+    "clean": "npm-run-all --parallel clean:*",
+    "clean:framework": "cd Framework && npm run clean",
+    "clean:samples": "cd Samples/Samples/TypeScript/Demo && npm run clean"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }
