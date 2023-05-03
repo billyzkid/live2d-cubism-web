@@ -1,5 +1,10 @@
 {
   "private": true,
+  "workspaces": [
+    "Core",
+    "Framework",
+    "Samples/Samples/TypeScript/Demo"
+  ],
   "scripts": {
     "start": "bash ./scripts/start.sh",
     "build": "bash ./scripts/build.sh",
