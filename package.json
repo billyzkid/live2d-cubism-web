@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "start": "bash scripts/start.sh",
-    "build": "bash scripts/build.sh",
-    "clean": "bash scripts/clean.sh",
-    "rinse": "bash scripts/rinse.sh"
+    "start": "bash ./scripts/start.sh",
+    "build": "bash ./scripts/build.sh",
+    "clean": "bash ./scripts/clean.sh",
+    "rinse": "bash ./scripts/rinse.sh"
   }
 }
